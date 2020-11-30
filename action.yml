@@ -1,0 +1,14 @@
+name: 'Flyway Postgres Migration'
+description: 'Run migrations using your Github Action'
+inputs:
+  flyway_conf_sha:
+    description: 'Flyway Configuration in Base64'
+    required: true
+    default: ''
+  flyway_sql:
+    description: 'Flyway SQL path'
+    required: false
+    default: './flyway/sql'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
