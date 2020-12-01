@@ -7,5 +7,5 @@ cp $INPUT_FLYWAY_SQL/* /flyway/sql
 flyway info
 bash /pre-migration.sh
 flyway migrate
-bash /post-migration.sh
 flyway info
+bash /post-migration.sh
