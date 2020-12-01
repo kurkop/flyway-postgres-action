@@ -27,10 +27,5 @@ bash Delete_Files.sh
 
 cd /flyway/conf/
 
-export PGUSER=$(grep -i flyway.user flyway.conf | awk -F "=" '{print $2}')
-export PGPASSWORD=$(grep -i flyway.password flyway.conf | awk -F "=" '{print $2}')
-export PGHOST=$(grep -i flyway.url flyway.conf | awk -F "/" '{print $3}' | awk -F ":" '{print $1}')
-export PGDATABASE=$(grep -i flyway.url flyway.conf | awk -F "/" '{print $4}')
-
 psql -c"DELETE FROM flyway_schema_history WHERE installed_rank >1;" 
 
