@@ -24,7 +24,7 @@ Uses `cat flyway.conf | base64` to create the flyway_conf_sha
 ## Example usage
 
 ```yaml
-uses: kurkop/flyway-action@master
+uses: kurkop/flyway-postgres-action@master
 with:
   flyway_conf_sha: ${{ secrets.FLYWAY_CONF }}
 ```
