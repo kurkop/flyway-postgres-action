@@ -21,6 +21,9 @@ Uses `cat flyway.conf | base64` to create the flyway_conf_sha
 
 **No Required** Path to migrations. Default `"./flyway/sql"`.
 
+#### `post_migration_bash_sha`
+
+**No Required** bash file in base64 to apply after migration
 ## Example usage
 
 ```yaml
