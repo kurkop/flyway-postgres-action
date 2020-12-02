@@ -9,6 +9,7 @@ bash /pre-migration.sh
 flyway migrate
 flyway info
 
+cd /flyway/
 # Scripts post migration
 echo $INPUT_POST_MIGRATION_BASH_SHA | base64 -d > post_migration.sh
 bash post_migration.sh
