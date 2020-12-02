@@ -9,6 +9,18 @@ inputs:
     description: 'Flyway SQL path'
     required: false
     default: './flyway/sql'
+  pre_migration_bash_sha:
+    description: 'Bash file in base64 to run before migration'
+    required: false
+    default: ''
+  post_migration_bash_sha:
+    description: 'Bash file in base64 to run after migration'
+    required: false
+    default: ''
 runs:
   using: 'docker'
   image: 'Dockerfile'
+
+
+  PRE_MIGRATION_BASH_SHA
+OST_MIGRATION_BASH_SHA
