@@ -20,7 +20,3 @@ inputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
-
-
-  PRE_MIGRATION_BASH_SHA
-OST_MIGRATION_BASH_SHA
