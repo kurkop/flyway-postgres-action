@@ -2,7 +2,7 @@ FROM flyway/flyway:6.4.0
 
 USER root
 
-RUN apt-get update -y && apt-get install -y postgresql-client
+RUN apt-get update -y && apt-get install -y postgresql-client libgdal-dev build-essential python3-pip
 
 USER flyway
 
