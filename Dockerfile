@@ -4,8 +4,6 @@ USER root
 
 RUN apt-get update -y && apt-get install -y postgresql-client libgdal-dev build-essential python3-pip python3-venv
 
-USER flyway
-
 COPY entrypoint.sh /entrypoint.sh
 COPY pre-migration.sh /pre-migration.sh
 
